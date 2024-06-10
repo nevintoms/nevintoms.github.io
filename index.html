@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1723623ea4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/nevin_logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header"><b>Home</b></a></li>
+                    <li><a href="#about"><b>About</b></a></li>
+                    <!-- <li><a href="#services"><b>Services</b></a></li> -->
+                    <li><a href="#portfolio"><b>Portfolio</b></a></li>
+                    <li><a href="#contact"><b>Contact</b></a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Scientist</p>
+                <h1>Hi, I am <span>Nevin</span>Toms</h1>
+            </div>
+        </div> 
+    </div>
+
+    <!--------------About----------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/nevin.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Results-driven Data Scientist with a keen eye for detail and a flair for turning large datasets into actionable insights.
+                        Proven expertise in Machine Learning, Deep Learning, and Natural Language Processing, delivering highly accurate
+                        solutions. Collaborative team player with a passion for transforming complex challenges into innovative solutions</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><b>Machine Learning & Data Analysis</b></span><br>Regression, Classification, Clustering, Forecasting, Data Cleaning, Normalization, Data
+                                Mining, Model Validation</li>
+                            <li><span><b>Deep Learning & Computer Vision</b></span><br>Neural Networks, Convolutional Neural Network(CNNs), Recurrent Neural Network(RNNs), Long Short-Term
+                                Memory(LSTM), Generative Adversarial Networks(GANs), Image Classification, Object Detection, Semantic Segmentation, Image Generation, Transfer Learning</li>
+                            <li><span><b>Natural Language Processing</b></span><br>Text Classification, Named Entity Recognition(NER), Sentiment Analysis, Text Generation, Word
+                                Embeddings(Word2Vec, GloVe), Transformer Models(BERT, GPT)</li>
+                            <li><span><b>Statistics</b></span><br>Statistical Analysis, Hypothesis Testing, Probability, Regression Analysis, Time Series Analysis</li>
+                            <li><span><b>Programming & Visualization Tools</b></span><br>Python(Pandas, Numpy, scikit-learn, PyTorch, Tensorflow, Keras, Matplotlib, Seaborn), SQL, C++,
+                                PySpark, Hive, Hadoop, Data Structures,Object-Oriented Programming, Debugging and Troubleshooting, Agile, GitHub</li>
+                            <li><span><b>Technical and Soft Skills</b></span><br>Data Structures,Object-Oriented Programming, Debugging and Troubleshooting, Agile, GitHub, Communication, Collaboration, Adaptability, Problem-solving, Leadership, Creativity, Critical thinking</li>
+                        </ul>
+                    </div> 
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <div class="about-header">
+                                <li>
+                                    <span><b>AI Teacher(Outlier, Canada)</b></span>
+                                    <span><b>Feb 2024 - Present</b></span>
+                                </li>
+                                <p>
+                                    ● Working with various novel LLM models to continuously improve and refine Generative AI responses.
+                                    ● Reviewed and improved 500+ Generative AI outputs by giving feedback on prompts and responses from various LLMs.<br>
+                                    ● Analyzed 50+ generated code chunks in Python and SQL to fine-tune next-gen LLMs
+                                </p>
+                            </div>
+                            <div class="about-header">
+                                <li>
+                                    <span><b>Research Engineer(Kevares Autonomous Services, Canada)</b></span>
+                                    <span><b>January 2024 - Present</b></span>
+                                </li>
+                                <p>
+                                    ● Developed and deployed advanced computer vision models, including YOLOv8, UNet, and FCN.<br>
+                                    ● Captured images from robots and annotated 500+ images using Roboflow for training and validation.<br>
+                                    ● Achieved a notable accuracy rate of 80% in detecting infrastructure deficiencies such as cracks, potholes, and gaps in
+                                      sidewalks.
+                                </p>
+                            </div>
+                            <div class="about-header">
+                                <li>
+                                    <span><b>Data Scientist(Prevalent AI, India)</b></span>
+                                    <span><b>July 2021 - August 2023</b></span>
+                                </li>
+                                <p>
+                                    ● Applied clustering, fuzzy logic, and Soundex algorithms to normalize names of persons and software across the different
+                                      sources of digital footprints, achieving a 20% improvement in data quality and a 40% reduction in data integration time.<br>
+                                    ● Implemented anomaly detection techniques with LDA to identify diverse dataset anomalies. Achieved 25% improvement in security by detecting and mitigating anomalous SQL queries, Active Directory activities, and Windows Event log irregularities.<br>
+                                    ● Utilized forecasting techniques to predict device instability, enabling proactive maintenance and resource allocation. This led to significant operational efficiency gains, reducing downtime and saving $200K in operational costs.
+                                </p>
+                            </div>
+    
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <div class="about-header">
+                                <li>
+                                    <span><b>Centennial College, ON, Canada</b></span>
+                                    <span><b>September 2024 – April 2025</b></span>
+                                </li>
+                                <p>
+                                    Degree: Graduate Certificate<br>
+                                    Course: Cybersecurity<br>
+                                </p><br>
+                            </div>
+                            <div class="about-header">
+                                <li>
+                                    <span><b>Humber College, ON, Canada</b></span>
+                                    <span><b>September 2023 – April 2024</b></span>
+                                </li>
+                                <p>
+                                    Degree: Graduate Certificate<br>
+                                    Course: Artificial Intelligence with Machine Learning<br>
+                                    GPA: 9.3/10 (Dean’s List)
+                                </p><br>
+                            </div>
+                            <div class="about-header">
+                                <li>
+                                    <span><b>Model Engineering College, India</b></span>
+                                    <span><b>August 2017 – July 2021</b></span>
+                                </li>
+                                <p>
+                                    Degree: Bachelor of Technology<br>
+                                    Course: Computer Science<br>
+                                    GPA: 8.8/10
+                                </p><br>
+                            </div>
+                            <div class="about-header">
+                                <li>
+                                    <span><b>Toc H Public School, India</b></span>
+                                    <span><b>August 2005 – July 2017</b></span>
+                                </li>
+                                <p>
+                                    Degree: Bachelor of Technology<br>
+                                    Course: Computer Science<br>
+                                    GPA: 8.8/10
+                                </p>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-------------services--------------->
+
+    <!-- <div id="services">
+        <div class="container">
+              <h1 class="sub-title">My Services</h1>
+              <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Description</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Description</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Description</p>
+                    <a href="#">Learn More</a>
+                </div>
+              </div>
+        </div>
+    </div> -->
+    
+    <!-- ----------------------Portfolio---------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/cap.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Description</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/gan.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Description</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/crack-seg.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Description</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden-item">
+                    <img src="images/space-counter-1.png">
+                    <div class="layer">
+                        <h3><b>Parking Space Counter using OpenCV</b></h3>
+                        <p>Implemented a Parking Space Counter utilizing advanced OpenCV techniques. Employed an algorithm designed to detect
+                            individual parking spaces, dynamically adjusting the space counter based on real-time occupancy. The algorithm accurately
+                            identifies vacant lots, incrementing the counter, while decrementing it upon detecting the presence of a car</p>
+                        <a href="https://github.com/nevintoms/parking-space-counter-using-image-processing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden-item">
+                    <img src="images/translate.jpg">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Description</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden-item">
+                    <img src="images/aws-1.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Description</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn" id="see-more-btn">See More</a>
+        </div>
+    </div>
+    
+
+    <!-------------------Contact--------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>nevintoms.ca@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+1 (437)-566-4973</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/nevin.toms.9"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/_nevin_toms_"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Designed & Built by © Nevin Toms</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents"); 
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+        var sidemeu = docment.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwWTTG7RHeDqUPVqHrhj81m00Hn_ZHYyoW84_J2LcumYIiybp4VkyzxMqSWbXjhmbqsig/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script>
+        document.getElementById('see-more-btn').addEventListener('click', function(event) {
+            event.preventDefault();
+            const hiddenItems = document.querySelectorAll('.hidden-item');
+            
+            if (this.textContent === 'See More') {
+                hiddenItems.forEach(item => {
+                    item.classList.add('show-item');
+                });
+                this.textContent = 'See Less';
+            } else {
+                hiddenItems.forEach(item => {
+                    item.classList.remove('show-item');
+                });
+                this.textContent = 'See More';
+            }
+        });
+    </script>
+    
+    
+    
+
+</body>
+</html>
